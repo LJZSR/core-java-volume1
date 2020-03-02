@@ -1,4 +1,6 @@
-import com.horstmann.corejava.*;
+package PackageTest;
+
+import PackageTest.com.horstmann.corejava.*;
 
 public class PackageTest {
 
