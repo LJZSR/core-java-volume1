@@ -31,15 +31,15 @@ public class Employee {
   }
 
   @Override
-  public boolean equals(Object othrObject) {
+  public boolean equals(Object otherObject) {
 
-    if (this == othrObject) return true;
+    if (this == otherObject) return true;
 
-    if (othrObject == null) return false;
+    if (otherObject == null) return false;
 
-    if (getClass() != othrObject.getClass()) return false;
+    if (getClass() != otherObject.getClass()) return false;
 
-    Employee other = (Employee)othrObject;
+    Employee other = (Employee)otherObject;
 
     return Objects.equals(name, other.name) && salary == other.salary && Objects.equals(hireDay, other.hireDay);
   }
