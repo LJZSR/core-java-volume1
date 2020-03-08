@@ -15,7 +15,7 @@ public class UnsynchBankTest {
           while (true) {
             int toAccount = (int)(bank.size() * Math.random());
             double amount = Math.random() * MAX_AMOUNT;
-            bank.transform(fromAccount, toAccount, amount);
+            bank.transfer(fromAccount, toAccount, amount);
             Thread.sleep((int)(DELAY * Math.random()));
           } 
         }

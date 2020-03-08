@@ -10,7 +10,7 @@ public class Bank {
     Arrays.fill(accounts, initialBalance);
   }
 
-  public void transform(int from, int to, double amount) {
+  public void transfer(int from, int to, double amount) {
     if (accounts[from] < amount) {
       return;
     }
