@@ -77,7 +77,7 @@ class MatchCounter implements Callable<Integer> {
 
   public boolean search(File file, String keyword) {
     try {
-      try(Scanner in = new Scanner(file, "UTF-8"))) {
+      try(Scanner in = new Scanner(file, "UTF-8")) {
         boolean found = false;
         while (in.hasNextLine()) {
           String line = in.nextLine();
