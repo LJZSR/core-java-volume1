@@ -32,10 +32,11 @@ class Employee {
   {
     id = nextId;
     ++nextId;
-    System.out.println(nextId);
+    System.out.println("Doing initialization Block");
   }
 
   public Employee(String name, double salary) {
+    System.out.println("Doing first constructor");
     this.name = name;
     this.salary = salary;
     System.out.println(name + " " + nextId);
@@ -43,6 +44,7 @@ class Employee {
 
   public Employee(double salary) {
     this("Employee# " + nextId, salary);
+    System.out.println("Doing second constructor");
   }
 
   public Employee() {
