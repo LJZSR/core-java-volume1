@@ -37,6 +37,7 @@ class Employee {
 
   public Employee(String name, double salary) {
     System.out.println("Doing first constructor");
+    System.out.println("nextId = " + Employee.nextId);
     this.name = name;
     this.salary = salary;
     System.out.println(name + " " + nextId);
